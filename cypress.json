@@ -1,0 +1,18 @@
+{
+    "$schema": "https://on.cypress.io/cypress.schema.json",
+    "baseUrl": "http://localhost:3000/",
+    "chromeWebSecurity": false,
+    "viewportHeight": 880,
+    "viewportWidth": 1200,
+    "video": false,
+    "testFiles": "**/*.spec.js",
+    "env": {
+        "apiURL": "https://api.carbonintensity.org.uk"
+    },
+    "reporter": "cypress-mochawesome-reporter",
+    "reporterOptions": {
+        "reportDir": "cypress/reports",
+        "charts": true,
+        "reportPageTitle": "SDET Test Report"
+    }
+}

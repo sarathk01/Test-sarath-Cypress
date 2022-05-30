@@ -1,0 +1,38 @@
+{
+  "name": "sdet_test",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "export": "npm run build && next export -o _static",
+    "cy:open": "cypress open",
+    "cy:frontend:test": "cypress run --spec \"cypress/integration/frontend/*.spec.js\" --browser chrome",
+    "cy:backend:test": "cypress run --spec \"cypress/integration/backend/*.spec.js\" --browser chrome",
+    "cy:e2e:test": "cypress run --spec \"cypress/integration/*/*.spec.js\" --browser chrome"
+  },
+  "dependencies": {
+    "@date-io/moment": "^2.13.1",
+    "@emotion/react": "^11.7.1",
+    "@emotion/styled": "^11.6.0",
+    "@mui/icons-material": "^5.3.1",
+    "@mui/lab": "^5.0.0-alpha.66",
+    "@mui/material": "^5.3.1",
+    "@mui/styles": "^5.3.0",
+    "date-fns": "^2.28.0",
+    "formik": "^2.2.9",
+    "moment": "^2.29.1",
+    "next": "12.0.8",
+    "react": "17.0.2",
+    "react-dom": "17.0.2",
+    "yup": "^0.32.11"
+  },
+  "devDependencies": {
+    "@types/react": "^17.0.38",
+    "cypress": "^9.7.0",
+    "cypress-mochawesome-reporter": "^3.1.0",
+    "eslint": "8.7.0",
+    "eslint-config-next": "12.0.8"
+  }
+}
